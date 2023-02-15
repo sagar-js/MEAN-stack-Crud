@@ -1,0 +1,40 @@
+[debug] [2023-02-15T12:57:37.545Z] ----------------------------------------------------------------------
+[debug] [2023-02-15T12:57:37.549Z] Command:       C:\Program Files (x86)\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-02-15T12:57:37.550Z] CLI Version:   11.20.0
+[debug] [2023-02-15T12:57:37.550Z] Platform:      win32
+[debug] [2023-02-15T12:57:37.550Z] Node Version:  v16.15.0
+[debug] [2023-02-15T12:57:37.608Z] Time:          Wed Feb 15 2023 18:27:37 GMT+0530 (India Standard Time)
+[debug] [2023-02-15T12:57:37.609Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-15T12:57:37.650Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-15T12:57:37.652Z] > authorizing via signed-in user (mrsagarkatad@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Admin\Desktop\product\Angulars\public\mongo-angular_connect\connect
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-02-15T12:59:39.527Z] > refreshing access token with scopes: []
+[debug] [2023-02-15T12:59:39.530Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-02-15T12:59:39.530Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-02-15T13:00:00.729Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2023-02-15T13:00:05.787Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:253:49)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+[error] 
+[error] Error: An unexpected error has occurred.

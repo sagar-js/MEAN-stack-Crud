@@ -1,0 +1,85 @@
+div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+table {
+    font-size: 16px;
+    width: 70%;
+    height: fit-content;
+
+    tr{
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        background-color: rgb(26, 27, 25);
+        th{
+            background-color: gray;
+            color: black;
+            padding:12px 0px;
+        }
+        td{
+            padding: 20px;
+        }
+    }
+    .edit {
+        background-color: green;
+        color: white;
+        border: none;
+        padding: 4px 8px;
+        margin: 0 4px;
+        border-radius: 5px;
+        transition: 0.1s;
+    }
+
+    .edit:hover{
+        transform: scale(1.2);
+    }
+    .delete {
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 4px 8px;
+        margin: 0 4px;
+        border-radius: 5px;
+        transition: 0.5s;
+    }
+
+    .delete:hover{
+        transform: scale(1.2);
+    }
+}
+
+form {
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    max-height: 97vh;
+    min-height: 97vh;
+    padding:0 20px;
+    margin:0 20px;
+    background-image: linear-gradient(yellow, rgb(238, 243, 79));
+
+    o label {
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    input {
+        width: 300px;
+        font-size: 16px;
+        padding: 4px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        color: white;
+        font-size: 20px;
+        padding: 4px 10px;
+        margin: 4px 20px;
+        background-color: green;
+        border-radius: 10px;
+        border: none;
+    }
+}

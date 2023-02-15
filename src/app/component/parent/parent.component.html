@@ -1,0 +1,11 @@
+<!-- passing message from parent to child component -->
+<section class="card">
+    <li>Name : Nike</li>
+    <li>price : $400</li>
+    <button (click)="viewD()">view Details</button>
+    <button routerLink="">crud Details</button>
+</section>
+
+<div *ngIf="view == true" (click)="viewD()">
+    <app-child [message]="messagefromparent"></app-child>
+</div>

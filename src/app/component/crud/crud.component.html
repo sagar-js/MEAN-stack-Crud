@@ -1,0 +1,50 @@
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tr *ngFor="let emp of Data">
+            <td>{{emp.name}}</td>
+            <td>{{emp.position}}</td>
+            <td>{{emp.office}}</td>
+            <td>{{emp.salary}}</td>
+            <td>
+                <a>
+                    <button class="edit">Edit</button>
+                </a>
+                <a>
+                    <button class="delete" (click)="DeleteData(emp._id)">Delete</button>
+                </a>
+            </td>
+        </tr>
+    </table>
+    <form [formGroup]="FormAdd" (ngSubmit)="PostData()">
+        <br />
+        <label for="name">Name:</label>
+        <br />
+        <input type="text" id="name" formControlName="name" autocomplete="off">
+
+        <br />
+        <label for="position">position</label>
+        <br />
+        <input type="text" id="position" formControlName="position" autocomplete="off">
+
+        <br />
+        <label for="office">office:</label>
+        <br />
+        <input type="text" id="office" formControlName="office" autocomplete="off">
+
+        <br />
+        <label for="salary">salary:</label>
+        <br />
+        <input type="text" id="salary" formControlName="salary" autocomplete="off">
+
+        <br />
+        <button type="submit" [disabled]="FormAdd?.invalid">Submit</button>
+    </form>
+</div>

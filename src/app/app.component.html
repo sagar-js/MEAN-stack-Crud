@@ -1,0 +1,102 @@
+<!-- 
+
+  Component
+    lifecycle
+        NgOnChange() : ngOnChanges(change:SimpleChanges){ console.log(changes) };
+        NgOninit()  : ngOnInit(){ console.log(initial) };
+        NgDoCheck() : ngDoCheck(){ console.log('change detection performed') };
+        NgAfterContentInit()  : ngAfterContentInit(){ console.log('content initalize ') };
+        NgAfterContentChecked() : ngAfterContentCheck(){ console.log('content chechl') };
+        NgAfterViewInit() : ngAfterViewInit(){ console.log(view init) }; 
+        NgAfterViewCheck()  : ngAfterViewChecked(){ console.log('view checked') };
+        NgOnDestroy() : ngOnDestroy(){ console.log('component destroy') };
+    
+    view encapsulation
+        @Component({
+          selector:`app-component`,
+          template:`
+            <p>This is component B</p>
+            <p class="text-red">This is red</p>
+            `,
+            styles:[`
+            .text-red{
+              color:red;
+            `}],
+            encapsuation: ViewEncapsulation.None/emulated
+        })
+        
+    interaction - parent to child for show details of product
+    styles
+    shareing data p-c, c-p directive, component
+    content projection
+    dynamic component
+
+  Template 
+    text interpolation
+    template statement
+  
+  Directives 
+    built in
+    attribute
+    structural
+    directive composition api
+
+  DI
+    create injectable service
+    define dependency provider
+    Heirarchical injector
+  
+
+  Standalone component
+  Change detection  
+    zone pollution
+    slow computation
+    skipping component subtree
+
+  Routing navigation
+    custom routing match
+    adding routing
+
+  Forms
+    reactive
+    strictly type
+    validate
+    dynamic
+
+  HTTP client
+  Image optimisation
+  Testing
+    intro
+    code coverage
+    testing service
+    basic
+    compo testing scenario
+    testing attribute directive
+    testing pipe
+    debugging test
+    testing utility api
+
+  Internalisation
+  Animation
+    transition trigger
+    complex seq
+    reusable
+    route transition
+  Service worker pwa
+  server side rendering 
+  prerendering
+  Lazy loading
+
+  deploying app
+  AOT compiler
+  building serving
+  cli builder
+  lang service
+  dev tools
+  schematic
+
+
+ -->
+
+ <!-- <router-outlet></router-outlet> -->
+ <app-crud></app-crud>
